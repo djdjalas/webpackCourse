@@ -1,0 +1,20 @@
+{
+  "name": "webpack",
+  "version": "1.0.0",
+  "description": "webpack course",
+  "main": "index.js",
+  "author": "yourname",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^0.26.1",
+    "webpack": "^1.14.0"
+  },
+  "scripts": {
+    "webpackfromterminal": "webpack ./app.js ./bundle.js",
+    "webpack": "webpack"
+  },
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "style-loader": "^0.13.1"
+  }
+}
