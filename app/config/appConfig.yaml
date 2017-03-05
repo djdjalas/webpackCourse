@@ -1,0 +1,19 @@
+app:
+  name: learning webpack with yaml
+  owner: Antonio
+  leadDev:
+    name: John Morris
+    email: john.morris@company.com
+  appUsers:
+    - company: google
+      contact: team@google.com
+    - company: amazon
+      contact: team@amazon.com
+  supportTeam:
+    email: support@company.com
+    phoneNumber: 0123456789
+  keywords:
+    - webpack
+    - webapp
+    - support
+    - development

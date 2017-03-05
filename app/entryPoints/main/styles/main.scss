@@ -1,0 +1,35 @@
+@import './color';
+@import './vendor';
+
+body{
+  // background-color: $mainBGcolor;
+  background: #fceabb; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #fceabb , #f8b500); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #fceabb , #f8b500); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin-top: 40px;
+}
+
+#window-small{
+  background-image: url('../../../images/windows-54kb.png');
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 267px;
+}
+
+#window-big{
+  background-image: url('../../../images/windows-130kb.png');
+  background-repeat: no-repeat;
+  width: 700px;
+  height: 467px;
+}
+
+a{
+  color: black;
+  font-size: 1.2em;
+  text-decoration: none;
+  &:hover{
+    color: black;
+    font-size: 1.4em;
+    text-decoration: none;
+  }
+}
