@@ -1,8 +1,8 @@
 var path = require('path');
-module.exports = {
-  entry: './app.js',
-  output: {
-    path: path.join(__dirname, 'build'),
-    filename: 'bundle.js'
-  }
+
+module.exports = function(env) {
+  const webpackConfigPath =
+    path.resolve(__dirname, 'config', `${env}.webpack.config.js`);
+  const webpackConfig = require(webpackConfigPath)(env);
+  return webpackConfig;
 }

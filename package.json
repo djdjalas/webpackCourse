@@ -1,20 +1,60 @@
 {
-  "name": "webpack",
+  "name": "webpack1and2",
   "version": "1.0.0",
-  "description": "webpack course",
-  "main": "index.js",
-  "author": "yourname",
+  "description": "webpack 1 and 2 most comprehensive course",
+  "main": "./app/entryPoints/main/index.js",
+  "author": "Nelson",
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^6.0.57",
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
+    "clean-webpack-plugin": "^0.1.15",
+    "coffee-loader": "^0.7.2",
+    "coffee-script": "^1.12.2",
     "css-loader": "^0.26.1",
-    "webpack": "^1.14.0"
+    "eslint": "^3.12.2",
+    "eslint-loader": "^1.6.1",
+    "extract-text-webpack-plugin": "beta",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.28.0",
+    "http-server": "^0.9.0",
+    "json-loader": "^0.5.4",
+    "node-sass": "^4.3.0",
+    "optimize-css-assets-webpack-plugin": "^1.3.0",
+    "sass-loader": "^4.1.1",
+    "style-loader": "^0.13.1",
+    "surge": "^0.18.0",
+    "ts-loader": "^1.3.3",
+    "typescript": "^2.1.4",
+    "url-loader": "^0.5.7",
+    "webpack": "2.2.1",
+    "webpack-dev-server": "^1.16.2",
+    "yaml-loader": "^0.4.0"
   },
   "scripts": {
     "webpackfromterminal": "webpack ./app.js ./bundle.js",
-    "webpack": "webpack"
+    "webpack": "webpack",
+    "webpack-dev-server": "webpack-dev-server",
+    "webpack:build-development": "webpack --env=development",
+    "webpack:serve-development": "webpack-dev-server --env=development",
+    "webpack:build-production": "webpack --env=production",
+    "webpack:serve-production": "webpack-dev-server --env=production",
+    "serve-local:production": "cd build-prod; http-server -p 8000 -o",
+    "serve-local:development": "cd build-dev; http-server -p 7000 -o",
+    "surge-deploy:production": "yarn run webpack:build-production; surge -p build-prod -d prod-webpack-course.surge.sh",
+    "surge-deploy:development": "yarn run webpack:build-development; surge -p build-dev -d dev-webpack-course.surge.sh",
+    "surge-deploy:all": "yarn run surge-deploy:production; yarn run surge-deploy:development"
   },
   "dependencies": {
+    "angular": "^1.6.1",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "global": "^4.3.1",
     "jquery": "^3.1.1",
-    "style-loader": "^0.13.1"
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
   }
 }
