@@ -24,3 +24,9 @@ $ yarn run
   "surge-deploy:all": "yarn run surge-deploy:production; yarn run surge-deploy:development"
 }
 ```
+## Link to images
+windows-54kb.png - https://github.com/djdjalas/webpackCourse/blob/master/app/images/windows-54kb.png
+windows-130kb.png - https://github.com/djdjalas/webpackCourse/blob/master/app/images/windows-130kb.png
+
+## Gist with exercise files
+- https://gist.github.com/djdjalas/4c497008d6f17bfd95164d5cc92423ee
